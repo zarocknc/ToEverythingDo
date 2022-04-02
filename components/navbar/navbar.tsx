@@ -51,7 +51,7 @@ export default function Navbar() {
                         onClick={isOpen ? onClose : onOpen}
                     />
                     <HStack spacing={8} alignItems={'center'}>
-                        <Box color={'white'}><Enlace href={'/'}><Image layout='fixed' alt='Logo pes' src={Todologo}/></Enlace></Box>
+                        <Box color={'white'}><Enlace href={'/'}><a><Image layout='fixed' alt='Logo pes' src={Todologo}/></a></Enlace></Box>
                         <HStack
                             color={'white'}
 
