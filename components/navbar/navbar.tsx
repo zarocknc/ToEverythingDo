@@ -18,6 +18,8 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, AddIcon } from '@chakra-ui/icons';
 import Enlace from 'next/link'
+import Image from 'next/image'
+import Todologo from '../../public/todologo.svg'
 const Links = ['Espacios', 'Calendario', 'Equipos'];
 
 const NavLink = ({ children }: { children: ReactNode }) => (
@@ -49,7 +51,7 @@ export default function Navbar() {
                         onClick={isOpen ? onClose : onOpen}
                     />
                     <HStack spacing={8} alignItems={'center'}>
-                        <Box color={'white'}><Enlace href={'/'}>ToEverythingDo</Enlace></Box>
+                        <Box color={'white'}><Enlace href={'/'}><Image layout='fixed' alt='Logo pes' src={Todologo}/></Enlace></Box>
                         <HStack
                             color={'white'}
 
